@@ -1,6 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = [];
+const initialState = [
+  {
+    name: "Fizban",
+    image: "../../public/staticDragonPics/fizban.png",
+    age: "1 universe",
+    height: `5'7"`,
+    bio: "I hope you like golden finches!",
+  },
+];
 
 export const dragonsSlice = createSlice({
   name: "dragons",
