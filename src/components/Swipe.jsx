@@ -8,7 +8,7 @@ const Swipe = () => {
   const { interestedIn } = useParams();
   const dragons = useSelector((state) => state.dragons);
   return (
-    <div>
+    <div className="bg-offBlack min-h-screen text-white text-center">
       <Navbar />
       <p>You're on the swipe page for {interestedIn} </p>
       {dragons.map((dragon) => {
@@ -17,6 +17,7 @@ const Swipe = () => {
             <p> {dragon.name} </p>
             <p> {dragon.height} </p>
             <p> {dragon.age} </p>
+            <img src={dragon.image} alt="" />
           </div>
         );
       })}
