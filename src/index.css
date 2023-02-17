@@ -1,3 +1,147 @@
+/* Importing a Google font that is apparently closest to what Tinder uses. Don't ask me I'm not UI. */
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap");
+
+p {
+  font-family: "Figtree", sans-serif;
+}
+
+/* Tailwind stuff */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Button styling from https://uiverse.io/satyamchaudharydev/modern-sheep-10 */
+
+.button {
+  --primary-color: rgb(242, 113, 161);
+  --secondary-color: rgb(255, 190, 221);
+  --hover-color: rgb(188, 15, 15);
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.button:hover .arrow:before {
+  right: 0;
+}
+
+/* Orbit animation from https://codepen.io/alandunning/pen/bNNRvQ*/
+
+/* Navbar button styling from https://uiverse.io/shah1345/spicy-liger-32 */
+
+.navButton {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: rgb(242, 113, 161);
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: rgb(255, 190, 221);
+  border: 1px solid rgb(255, 190, 221);
+  box-shadow: 6px 6px 12px rgb(255, 190, 221), -6px -6px 12px rgb(255, 190, 221);
+}
+
+.navButton:active {
+  color: rgb(242, 113, 161);
+  box-shadow: inset 4px 4px 12px rgb(255, 190, 221),
+    inset -4px -4px 12px rgb(255, 190, 221);
+}
+
+.navButton:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgb(255, 190, 221);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.navButton:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: rgb(188, 15, 15);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.navButton:hover {
+  color: rgb(255, 190, 221);
+  border: 1px solid rgb(188, 15, 15);
+}
+
+.navButton:hover:before {
+  top: -35%;
+  background-color: rgb(188, 15, 15);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.navButton:hover:after {
+  top: -45%;
+  background-color: rgb(188, 15, 15);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
