@@ -2,7 +2,7 @@ import React from "react";
 
 const Splash = () => {
   return (
-    <div>
+    <div className=" bg-offBlack">
       <h1> Dungeons with Dragons </h1>
 
       <p>
@@ -10,7 +10,10 @@ const Splash = () => {
         keep you warm?
       </p>
 
-      <button> Get started </button>
+      <p>I'm interested in: </p>
+
+      <button> Dungeons </button>
+      <button> Dragons </button>
     </div>
   );
 };
