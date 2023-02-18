@@ -7,10 +7,10 @@ const Navbar = () => {
       <Link to="/" className="navButton">
         Home
       </Link>
-      <Link to="/swipe/Dungeons" className="navButton">
+      <Link to="/swipe/dungeons" className="navButton">
         Swipe Dungeons
       </Link>
-      <Link to="/swipe/Dragons" className="navButton">
+      <Link to="/swipe/dragons" className="navButton">
         Swipe Dragons
       </Link>
       <Link to="/matches" className="navButton">

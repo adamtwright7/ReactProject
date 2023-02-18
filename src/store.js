@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import addDragon from "./reducers/dragons";
-import addDungeon from "./reducers/dungeons";
+import dragonReducers from "./reducers/dragons";
+import dungeonReducers from "./reducers/dungeons";
+import matchReducers from "./reducers/matches";
 
 export const store = configureStore({
   reducer: {
-    dragons: addDragon,
-    dungeons: addDungeon,
+    dragons: dragonReducers,
+    dungeons: dungeonReducers,
+    matches: matchReducers,
   },
 });

@@ -40,6 +40,17 @@ const Splash = () => {
           Dragons
         </Link>
       </div>
+      <p className="italic text-sm p-6">
+        A parody by{" "}
+        <a className="underline" href="https://adamtwright7.github.io/">
+          Adam Wright
+        </a>
+        .
+        <br />
+        Disclaimer: "Dungeons with Dragons" is not responsible for any harm that
+        may befall you via breath weapons, mad wizards, dastardly traps, or
+        cunning mimics. No refunds. True love sold separately.
+      </p>
     </div>
   );
 };
