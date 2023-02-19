@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { useSelector, useDispatch } from "react-redux";
-import Card from "./Card";
+import MatchCard from "./MatchCard";
 
 const Matches = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ const Matches = () => {
       <Navbar />
       Matches
       {matches.map((match) => (
-        <Card suitor={match} />
+        <MatchCard suitor={match} />
       ))}
     </div>
   );

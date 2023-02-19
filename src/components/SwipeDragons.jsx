@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { useSelector, useDispatch } from "react-redux";
 import { addDragon } from "../reducers/dragons";
-import Card from "./Card";
+import SwipeCard from "./SwipeCard";
 
 const SwipeDragons = () => {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const SwipeDragons = () => {
   return (
     <div className="bg-offBlack min-h-screen text-white text-center">
       <Navbar />
-      <Card suitor={dragon} />
+      <SwipeCard suitor={dragon} />
     </div>
   );
 };

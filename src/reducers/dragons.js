@@ -66,10 +66,13 @@ export const dragonsSlice = createSlice({
     addDragon: (state, action) => {
       state.push(action.payload);
     },
+    removeDragon: (state, action) => {
+      return state.filter((item) => item.name !== action.payload.name);
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addDragon } = dragonsSlice.actions;
+export const { addDragon, removeDragon } = dragonsSlice.actions;
 
 export default dragonsSlice.reducer;

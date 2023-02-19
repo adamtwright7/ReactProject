@@ -66,10 +66,13 @@ export const dungeonsSlice = createSlice({
     addDungeon: (state, action) => {
       state.push(action.payload);
     },
+    removeDungeon: (state, action) => {
+      return state.filter((item) => item.name !== action.payload.name);
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addDungeon } = dungeonsSlice.actions;
+export const { addDungeon, removeDungeon } = dungeonsSlice.actions;
 
 export default dungeonsSlice.reducer;

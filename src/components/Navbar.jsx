@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="flex justify-around bg-offBlack p-4">
-      <Link to="/" className="navButton">
+      <Link to="/" className="button">
         Home
       </Link>
-      <Link to="/swipe/dungeons" className="navButton">
+      <Link to="/swipe/dungeons" className="button">
         Swipe Dungeons
       </Link>
-      <Link to="/swipe/dragons" className="navButton">
+      <Link to="/swipe/dragons" className="button">
         Swipe Dragons
       </Link>
-      <Link to="/matches" className="navButton">
+      <Link to="/matches" className="button">
         Matches
       </Link>
     </div>
