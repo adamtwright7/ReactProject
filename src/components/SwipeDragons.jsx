@@ -1,11 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { useSelector, useDispatch } from "react-redux";
-import { addDragon } from "../reducers/dragons";
+import { useSelector } from "react-redux";
 import SwipeCard from "./SwipeCard";
 
 const SwipeDragons = () => {
-  const dispatch = useDispatch();
   const dragons = useSelector((state) => state.dragons);
   let randInd = Math.floor(Math.random() * 8); // Gives a random number between 0 and 7 -- the indexes of the "dragons" array.
   let dragon = dragons[randInd];

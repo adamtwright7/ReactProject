@@ -200,7 +200,7 @@ Icon from https://thenounproject.com/icon/fast-forward-1033430/ */
 
 .skipButton::before {
   content: "";
-  background-image: url("https://thenounproject.com/api/private/icons/1033430/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABj8pYIEEcgwxmBu-MB7YWDl-WvpP7tqOLxsEe3ey9PfashCzyAzydE1oJvNACWUexem1FVwhNJ__mQkHrZ1ezf6CJnfA%3D%3D");
+  background-image: url("../public/skip.png");
   background-size: 100%;
   background-repeat: no-repeat;
   color: transparent;
@@ -213,7 +213,7 @@ Icon from https://thenounproject.com/icon/fast-forward-1033430/ */
 }
 
 .skipButton:hover:before {
-  background-image: url("https://thenounproject.com/api/private/icons/1033430/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABj8pYIEEcgwxmBu-MB7YWDl-WvpP7tqOLxsEe3ey9PfashCzyAzydE1oJvNACWUexem1FVwhNJ__mQkHrZ1ezf6CJnfA%3D%3D");
+  background-image: url("../public/skip.png");
   transition: all 0.9s ease-in-out;
   transform: rotate(-1turn);
 }

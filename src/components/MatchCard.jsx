@@ -11,14 +11,19 @@ const MatchCard = ({ suitor }) => {
       <p> {suitor.age} </p>
       <img src={suitor.image} alt="" />
       <div className="flex justify-around p-6">
-        <button onClick={() => dispatch(addMatch(suitor))} className="button">
-          Like
-        </button>
         <button
           onClick={() => dispatch(removeMatch(suitor))}
-          className="button"
+          className="skipButton"
         >
           Remove
+        </button>
+        {/* The below button needs to link to a chat page. */}
+        <button
+          onClick={() => dispatch(addMatch(suitor))}
+          class="icon-btn add-btn"
+        >
+          <div class="add-icon"></div>
+          <p class="btn-txt">Chat Now</p>
         </button>
       </div>
     </div>
