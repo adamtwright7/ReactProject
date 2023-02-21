@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
   {
+    id: 1,
     name: "Castle Ravenloft",
     image: "../../public/staticDungeonPics/castleRavenloft.png",
     age: "164",
@@ -9,6 +10,7 @@ const initialState = [
     bio: "Tall goth girl",
   },
   {
+    id: 2,
     name: "Dungeon of the Mad Mage",
     image: "../../public/staticDungeonPics/madMage.jpg",
     age: "674",
@@ -16,6 +18,7 @@ const initialState = [
     bio: "Yeah my ex was a little crazy haha",
   },
   {
+    id: 3,
     name: "Palace Of Heart's Desire",
     image: "../../public/staticDungeonPics/palaceOfHeartsDesire.png",
     age: "23 years",
@@ -23,6 +26,7 @@ const initialState = [
     bio: "I can grant whatever you desire...",
   },
   {
+    id: 4,
     name: "Salvage Operation",
     image: "../../public/staticDungeonPics/salvageOperation.jpg",
     age: "56 years",
@@ -30,6 +34,7 @@ const initialState = [
     bio: "Just floating wherever the wind takes me ahaha",
   },
   {
+    id: 5,
     name: "Tomb of Annihilation",
     image: "../../public/staticDungeonPics/toa.jpg",
     age: "972 years",
@@ -37,6 +42,7 @@ const initialState = [
     bio: "Already got one lich",
   },
   {
+    id: 6,
     name: "Creeping Hut",
     image: "../../public/staticDungeonPics/walkingHut.jpg",
     age: "1047 years",
@@ -44,6 +50,7 @@ const initialState = [
     bio: "Stopped creepin' a couple years ago",
   },
   {
+    id: 7,
     name: "White Plume Mountain",
     image: "../../public/staticDungeonPics/whitePlumeMountain.png",
     age: "207 years",
@@ -51,6 +58,7 @@ const initialState = [
     bio: "Hot and I know it",
   },
   {
+    id: 8,
     name: "Zariel's Flying Fortress",
     image: "../../public/staticDungeonPics/zarielsFlyingFortress.png",
     age: "176 years",

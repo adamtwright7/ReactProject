@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Splash = () => {
   return (
     <div className="bg-offBlack min-h-screen text-white text-center">
-      <p className="italic p-6"> Dungeons with Dragons </p>
+      <p className="italic p-6"> Dungeons 💕with🐉 Dragons </p>
 
       <p className="text-4xl m-6">
         Tired of someone without a hoard living in your space? Need a place to

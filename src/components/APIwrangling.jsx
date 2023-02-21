@@ -19,7 +19,7 @@ const Home = () => {
   // All the API call stuff
   const overallAPIcall = async () => {
     // Call the API for all the dragon artwork
-    let url = "https://api.artic.edu/api/v1/artworks/search?q=dragon&limit=10";
+    let url = "https://api.artic.edu/api/v1/artworks/search?q=dungeon&limit=10";
     const rawData = await fetch(url);
     const readableData = await rawData.json();
     readableData.data.map((artPiece) => {

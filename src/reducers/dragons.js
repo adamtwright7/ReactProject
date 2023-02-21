@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
   {
+    id: 1,
     name: "Fizban",
     image: "../../public/staticDragonPics/fizban.png",
     age: "1 universe",
@@ -9,6 +10,7 @@ const initialState = [
     bio: "I hope you like golden finches!",
   },
   {
+    id: 2,
     name: "Argynvost",
     image: "../../public/staticDragonPics/argynvost.png",
     age: "324 years",
@@ -16,6 +18,7 @@ const initialState = [
     bio: "A knight in shining silver.",
   },
   {
+    id: 3,
     name: "Arveiaturace",
     image: "../../public/staticDragonPics/arveiaturace.png",
     age: "1828 years",
@@ -23,6 +26,7 @@ const initialState = [
     bio: "Ready your pickup lines, Meltharond!",
   },
   {
+    id: 4,
     name: "Galadaeros",
     image: "../../public/staticDragonPics/galadaeros.webp",
     age: "247 years",
@@ -30,6 +34,7 @@ const initialState = [
     bio: "Patron of the Moonshae Isle's first all-female adventuring company.",
   },
   {
+    id: 5,
     name: "Imvaernarhro",
     image: "../../public/staticDragonPics/imvaernarhro.png",
     age: "1561 years",
@@ -37,6 +42,7 @@ const initialState = [
     bio: "Call me Inferno.",
   },
   {
+    id: 6,
     name: "Jabberwock",
     image: "../../public/staticDragonPics/jabberwock.jpg",
     age: "? years",
@@ -44,6 +50,7 @@ const initialState = [
     bio: "jaws that bite, claws that catch",
   },
   {
+    id: 7,
     name: "Tiamat",
     image: "../../public/staticDragonPics/tiamat.jpg",
     age: "1 universe",
@@ -51,6 +58,7 @@ const initialState = [
     bio: "The queen herself.",
   },
   {
+    id: 8,
     name: "Valdemar",
     image: "../../public/staticDragonPics/valdemar.webp",
     age: "106 years",

@@ -6,10 +6,10 @@ const MatchCard = ({ suitor }) => {
   const dispatch = useDispatch();
   return (
     <div>
-      <p> {suitor.name} </p>
-      <p> {suitor.height} </p>
-      <p> {suitor.age} </p>
-      <img src={suitor.image} alt="" />
+      <p> {suitor?.name} </p>
+      <p> {suitor?.height} </p>
+      <p> {suitor?.age} </p>
+      <img src={suitor?.image} alt="" />
       <div className="flex justify-around p-6">
         <button
           onClick={() => dispatch(removeMatch(suitor))}
