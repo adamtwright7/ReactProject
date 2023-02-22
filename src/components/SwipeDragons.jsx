@@ -56,7 +56,7 @@ const SwipeDragons = () => {
   // End dragon adding. Standard stuff follows:
 
   const dragons = useSelector((state) => state.dragons); // get the redux state
-
+  const [dontfetch, setDontfetch] = useState(false);
   const [dragon, setDragon] = useState({});
 
   const dispatch = useDispatch();
@@ -69,7 +69,8 @@ const SwipeDragons = () => {
   // calls the first dragon
   useEffect(() => {
     getDragon();
-  }, []);
+    overallAPIcall();
+  }, [dontfetch]);
 
   const handleSwipes = useSwipeable({
     onSwipedLeft: () => {

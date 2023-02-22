@@ -7,11 +7,14 @@ import { store } from "./store";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </BrowserRouter>
-  </React.StrictMode>
+  // React Strict Mode is turned off so that `useEffect` doesn't run twice.
+  // `useEffect` normally would run twice in React Strict Mode, but not in production.
+  // It's important that `useEffect` not run twice so that the API doesn't do all calls twice.
+  // <React.StrictMode>
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>
+  // </React.StrictMode>
 );
