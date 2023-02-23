@@ -51,6 +51,10 @@ const Splash = () => {
         may befall you via breath weapons, mad wizards, dastardly traps, or
         cunning mimics. No refunds. True love sold separately.
       </p>
+      <p>
+        Inspired by the following near-omnipresent idea in the D&D community:
+      </p>
+      <img className="m-auto p-6" src="../../public/meme.png" alt="" />
     </div>
   );
 };
