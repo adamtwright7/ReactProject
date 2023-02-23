@@ -75,7 +75,7 @@ export const dragonsSlice = createSlice({
       state.push(action.payload);
     },
     removeDragon: (state, action) => {
-      return state.filter((item) => item.name !== action.payload.name);
+      return state.filter((item) => item.id !== action.payload.id);
     },
   },
 });

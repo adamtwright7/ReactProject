@@ -5,9 +5,12 @@ import { addDragon, removeDragon } from "../reducers/dragons";
 import { addMatch } from "../reducers/matches";
 import { useSwipeable } from "react-swipeable"; // custom swipe event listener
 import { motion } from "framer-motion"; // used for swipe animations
+import dragonNames from "../../public/dragonNames"; // gotta have the dragon names
 
 const SwipeDragons = () => {
   /// ------------ API stuff -----------------
+  // In a real application, an API call as large as this (100 asynchronous operations) wouldn't be done.
+  // A new potential match would simply be called from a database.
 
   const [imagesToDisplay, setImagesToDisplay] = useState([]);
 
@@ -22,7 +25,6 @@ const SwipeDragons = () => {
     setImagesToDisplay((imagesToDisplay) => imagesToDisplay.concat(imageURL));
   };
 
-  // All the API call stuff
   const overallAPIcall = async () => {
     // Call the API for all the dragon artwork
     let url = "https://api.artic.edu/api/v1/artworks/search?q=dragon&limit=99";
@@ -38,25 +40,33 @@ const SwipeDragons = () => {
   // More dragon adding stuff.
   // By now, "imagesToDisplay" should have 99 dragon pictures.
 
-  const addAPIdragon = () => {
-    // if there's already a current ID, increase it. Otherwise, start it at 9 (the first ID not hard-coded)
-    currentID ? (currentID += 1) : (currentID = 9);
+  // Track the current ID. In a real application, this would be handled by an auto-incrementing field in a database or the `uuid` package.
+  const [currentID, setCurrentID] = useState(9);
 
+  const [randomDragonName, setRandomDragonName] = useState("Raiinn");
+
+  const addAPIdragon = () => {
+    // Generate a new random name and update the ID
+    setRandomDragonName(dragonNames[Math.floor(Math.random() * 151)]);
+    setCurrentID((currentID) => currentID + 1);
+
+    // Create a new "profile"
     let nextDragon = {
       id: currentID,
-      name: "Test Name",
-      image: imagesToDisplay[0], // gets the first image from the API
+      name: randomDragonName,
+      image: imagesToDisplay.pop(),
       age: `${Math.floor(Math.random() * 1000) + 25} years`, // random age between 25 and 1024 years
       height: `${Math.floor(Math.random() * 41) + 10}' 
       ${Math.floor(Math.random() * 13)}"`, // random height between 10-50 feet
       bio: "", // Would be cool to randomly generate bios in a more complete site
     };
+
+    dispatch(addDragon(nextDragon));
   };
 
   // End dragon adding. Standard stuff follows:
 
   const dragons = useSelector((state) => state.dragons); // get the redux state
-  const [dontfetch, setDontfetch] = useState(false);
   const [dragon, setDragon] = useState({});
 
   const dispatch = useDispatch();
@@ -64,13 +74,15 @@ const SwipeDragons = () => {
   const getDragon = () => {
     const randInd = Math.floor(Math.random() * dragons.length); // Gives a random index of the "dragons" array.
     setDragon(dragons[randInd]);
+    // Every time we get the next dragon, we also want to add a dragon to the list.
+    addAPIdragon();
   };
 
   // calls the first dragon
   useEffect(() => {
     getDragon();
     overallAPIcall();
-  }, [dontfetch]);
+  }, []);
 
   const handleSwipes = useSwipeable({
     onSwipedLeft: () => {
