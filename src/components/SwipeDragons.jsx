@@ -14,7 +14,7 @@ const SwipeDragons = () => {
   // A new potential match would simply be called from a database.
 
   const [imagesToDisplay, setImagesToDisplay] = useState([
-    "../../public/staticDragonPics/pseudodragon.png",
+    "./public/staticDragonPics/pseudodragon.png",
   ]);
 
   const imageAPIcall = async (imageAPIurlVariable) => {
@@ -108,7 +108,7 @@ const SwipeDragons = () => {
         <motion.div drag="x" dragConstraints={{ left: 0, right: 0 }}>
           <img
             src={dragons[0]?.image}
-            className="p-6 mx-auto border-pink-300 border-2 hover:border-4 rounded-lg"
+            className="p-6 mx-auto border-pink-300 border-2 m-6 hover:border-4 rounded-lg w-[90vw]"
           />
         </motion.div>
         <p className="p-4"> {dragons[0]?.bio} </p>

@@ -12,7 +12,7 @@ const MatchCard = ({ suitor }) => {
       </p>
       <img
         src={suitor?.image}
-        className="p-6 mx-auto border-pink-300 border-2 hover:border-4 rounded-lg"
+        className="p-6 mx-auto border-pink-300 border-2 hover:border-4 rounded-lg w-[90vw]"
       />
       <p className="p-4"> {suitor?.bio} </p>
       <div className="flex justify-around p-6">
