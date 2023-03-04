@@ -4,7 +4,7 @@ const initialState = [
   {
     id: 1,
     name: "Fizban",
-    image: "../../public/staticDragonPics/fizban.png",
+    image: "../../staticDragonPics/fizban.png",
     age: "1 universe",
     height: `5'7"`,
     bio: "I hope you like golden finches!",
@@ -12,7 +12,7 @@ const initialState = [
   {
     id: 2,
     name: "Argynvost",
-    image: "../../public/staticDragonPics/argynvost.png",
+    image: "../../staticDragonPics/argynvost.png",
     age: "324 years",
     height: `6'4"`,
     bio: "A knight in shining silver.",
@@ -20,7 +20,7 @@ const initialState = [
   {
     id: 3,
     name: "Arveiaturace",
-    image: "../../public/staticDragonPics/arveiaturace.png",
+    image: "../../staticDragonPics/arveiaturace.png",
     age: "1828 years",
     height: `18'2"`,
     bio: "Ready your pickup lines, Meltharond!",
@@ -28,7 +28,7 @@ const initialState = [
   {
     id: 4,
     name: "Galadaeros",
-    image: "../../public/staticDragonPics/galadaeros.webp",
+    image: "../../staticDragonPics/galadaeros.webp",
     age: "247 years",
     height: `15'4"`,
     bio: "Patron of the Moonshae Isle's first all-female adventuring company.",
@@ -36,7 +36,7 @@ const initialState = [
   {
     id: 5,
     name: "Imvaernarhro",
-    image: "../../public/staticDragonPics/imvaernarhro.png",
+    image: "../../staticDragonPics/imvaernarhro.png",
     age: "1561 years",
     height: `26'3"`,
     bio: "Call me Inferno.",
@@ -44,7 +44,7 @@ const initialState = [
   {
     id: 6,
     name: "Jabberwock",
-    image: "../../public/staticDragonPics/jabberwock.jpg",
+    image: "../../staticDragonPics/jabberwock.jpg",
     age: "? years",
     height: `12'9"`,
     bio: "jaws that bite, claws that catch",
@@ -52,7 +52,7 @@ const initialState = [
   {
     id: 7,
     name: "Tiamat",
-    image: "../../public/staticDragonPics/tiamat.jpg",
+    image: "../../staticDragonPics/tiamat.jpg",
     age: "1 universe",
     height: `55'11"`,
     bio: "The queen herself.",
@@ -60,7 +60,7 @@ const initialState = [
   {
     id: 8,
     name: "Valdemar",
-    image: "../../public/staticDragonPics/valdemar.webp",
+    image: "../../staticDragonPics/valdemar.webp",
     age: "106 years",
     height: `16'6"`,
     bio: "Need someone to get her (the sword) out of my head.",

@@ -15,18 +15,18 @@ const Splash = () => {
         id="orbit"
         className="grid grid-cols-3 gap-6 items-center justify-items-center m-6"
       >
-        <img src="./public/staticDragonPics/fizban.png" />
-        <img src="./public/staticDragonPics/valdemar.webp" />
-        <img src="./public/staticDragonPics/tiamat.jpg" />
-        <img src="./public/staticDragonPics/jabberwock.jpg" />
+        <img src="./staticDragonPics/fizban.png" />
+        <img src="./staticDragonPics/valdemar.webp" />
+        <img src="./staticDragonPics/tiamat.jpg" />
+        <img src="./staticDragonPics/jabberwock.jpg" />
         <img
-          src="./public/staticDragonPics/argynvost.png"
+          src="./staticDragonPics/argynvost.png"
           alt="placeholder center pic"
         />
-        <img src="./public/staticDungeonPics/madMage.jpg" />
-        <img src="./public/staticDungeonPics/toa.jpg" />
-        <img src="./public/staticDungeonPics/walkingHut.jpg" />
-        <img src="./public/staticDungeonPics/salvageOperation.jpg" />
+        <img src="./staticDungeonPics/madMage.jpg" />
+        <img src="./staticDungeonPics/toa.jpg" />
+        <img src="./staticDungeonPics/walkingHut.jpg" />
+        <img src="./staticDungeonPics/salvageOperation.jpg" />
       </div>
 
       <p className="font-bold p-4"> Get started. </p>
@@ -54,7 +54,7 @@ const Splash = () => {
       <p>
         Inspired by the following near-omnipresent idea in the D&D community:
       </p>
-      <img className="m-auto p-6" src="../../public/meme.png" alt="" />
+      <img className="m-auto p-6" src="../../meme.png" alt="" />
     </div>
   );
 };

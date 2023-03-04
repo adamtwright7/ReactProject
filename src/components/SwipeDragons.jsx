@@ -14,7 +14,7 @@ const SwipeDragons = () => {
   // A new potential match would simply be called from a database.
 
   const [imagesToDisplay, setImagesToDisplay] = useState([
-    "./public/staticDragonPics/pseudodragon.png",
+    "./staticDragonPics/pseudodragon.png",
   ]);
 
   const imageAPIcall = async (imageAPIurlVariable) => {

@@ -167,7 +167,7 @@ Icon from https://thenounproject.com/icon/fast-forward-1033430/ */
 
 .skipButton::before {
   content: "";
-  background-image: url("../public/skip.png");
+  background-image: url("../skip.png");
   background-size: 100%;
   background-repeat: no-repeat;
   color: transparent;
@@ -180,7 +180,7 @@ Icon from https://thenounproject.com/icon/fast-forward-1033430/ */
 }
 
 .skipButton:hover:before {
-  background-image: url("../public/skip.png");
+  background-image: url("../skip.png");
   transition: all 0.9s ease-in-out;
   transform: rotate(-1turn);
 }
