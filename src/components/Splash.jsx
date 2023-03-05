@@ -20,7 +20,7 @@ const Splash = () => {
         <img src="./staticDragonPics/tiamat.jpg" />
         <img src="./staticDragonPics/jabberwock.jpg" />
         <img
-          src="./staticDragonPics/argynvost.png"
+          src="./staticDragonPics/argynvost.jpg"
           alt="placeholder center pic"
         />
         <img src="./staticDungeonPics/madMage.jpg" />
