@@ -12,7 +12,7 @@ const initialState = [
   {
     id: 2,
     name: "Argynvost",
-    image: "../../staticDragonPics/argynvost.png",
+    image: "../../staticDragonPics/argynvost.jpg",
     age: "324 years",
     height: `6'4"`,
     bio: "A knight in shining silver.",
@@ -20,7 +20,7 @@ const initialState = [
   {
     id: 3,
     name: "Arveiaturace",
-    image: "../../staticDragonPics/arveiaturace.png",
+    image: "../../staticDragonPics/arveiaturace.jpg",
     age: "1828 years",
     height: `18'2"`,
     bio: "Ready your pickup lines, Meltharond!",
@@ -28,7 +28,7 @@ const initialState = [
   {
     id: 4,
     name: "Galadaeros",
-    image: "../../staticDragonPics/galadaeros.webp",
+    image: "../../staticDragonPics/galadaeros.jpg",
     age: "247 years",
     height: `15'4"`,
     bio: "Patron of the Moonshae Isle's first all-female adventuring company.",
@@ -36,7 +36,7 @@ const initialState = [
   {
     id: 5,
     name: "Imvaernarhro",
-    image: "../../staticDragonPics/imvaernarhro.png",
+    image: "../../staticDragonPics/imvaernarhro.jpg",
     age: "1561 years",
     height: `26'3"`,
     bio: "Call me Inferno.",
@@ -60,7 +60,7 @@ const initialState = [
   {
     id: 8,
     name: "Valdemar",
-    image: "../../staticDragonPics/valdemar.webp",
+    image: "../../staticDragonPics/valdemar.jpg",
     age: "106 years",
     height: `16'6"`,
     bio: "Need someone to get her (the sword) out of my head.",

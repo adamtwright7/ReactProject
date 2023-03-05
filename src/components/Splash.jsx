@@ -16,7 +16,7 @@ const Splash = () => {
         className="grid grid-cols-3 gap-6 items-center justify-items-center m-6"
       >
         <img src="./staticDragonPics/fizban.png" />
-        <img src="./staticDragonPics/valdemar.webp" />
+        <img src="./staticDragonPics/galadaeros.jpg" />
         <img src="./staticDragonPics/tiamat.jpg" />
         <img src="./staticDragonPics/jabberwock.jpg" />
         <img

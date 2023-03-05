@@ -4,7 +4,7 @@ const initialState = [
   {
     id: 1,
     name: "Castle Ravenloft",
-    image: "../../staticDungeonPics/castleRavenloft.png",
+    image: "../../staticDungeonPics/castleRavenloft.jpg",
     age: "164",
     height: `364'2"`,
     bio: "Tall goth girl",
@@ -20,7 +20,7 @@ const initialState = [
   {
     id: 3,
     name: "Palace Of Heart's Desire",
-    image: "../../staticDungeonPics/palaceOfHeartsDesire.png",
+    image: "../../staticDungeonPics/palaceOfHeartsDesire.jpg",
     age: "23 years",
     height: `1 beanstalk`,
     bio: "I can grant whatever you desire...",
@@ -52,7 +52,7 @@ const initialState = [
   {
     id: 7,
     name: "White Plume Mountain",
-    image: "../../staticDungeonPics/whitePlumeMountain.png",
+    image: "../../staticDungeonPics/whitePlumeMountain.jpg",
     age: "207 years",
     height: `204'8"`,
     bio: "Hot and I know it",
@@ -60,7 +60,7 @@ const initialState = [
   {
     id: 8,
     name: "Zariel's Flying Fortress",
-    image: "../../staticDungeonPics/zarielsFlyingFortress.png",
+    image: "../../staticDungeonPics/zarielsFlyingFortress.jpg",
     age: "176 years",
     height: `800'3"`,
     bio: "The view up here is nice actually",

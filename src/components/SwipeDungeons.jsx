@@ -9,16 +9,13 @@ import { addMatch } from "../reducers/matches";
 import { useSwipeable } from "react-swipeable"; // custom swipe event listener
 import { motion } from "framer-motion"; // used for swipe animations
 import dragonNames from "../../public/dragonNames"; // gotta have the dragon names -- I'll use these for dungeons too I guess
-import { store } from "../store";
 
 const SwipeDragons = () => {
   /// ------------ API stuff -----------------
   // In a real application, an API call as large as this (100 asynchronous operations) wouldn't be done.
   // A new potential match would simply be called from a database.
 
-  const [imagesToDisplay, setImagesToDisplay] = useState([
-    "../../public/staticDragonPics/pseudodragon.png",
-  ]);
+  const [imagesToDisplay, setImagesToDisplay] = useState(["./staticDungeonPics/salvageOperation.jpg"]);
 
   const imageAPIcall = async (imageAPIurlVariable) => {
     let imageRawData = await fetch(imageAPIurlVariable);
